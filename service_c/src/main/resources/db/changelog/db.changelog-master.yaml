@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001-create-table-messages
+      author: Viladit
+      changes:
+        - createTable:
+            tableName: messages
+            columns:
+              - column: { name: id, type: BIGSERIAL, autoIncrement: true, constraints: { primaryKey: true } }
+              - column: { name: message_id, type: varchar(64) }
+              - column: { name: type,       type: varchar(32) }
+              - column: { name: content,    type: text }
+              - column: { name: received_at, type: timestamp }
+              - column: { name: created_at,  type: timestamp, defaultValueComputed: now() }
