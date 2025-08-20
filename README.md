@@ -1,3 +1,5 @@
+![Demo GIF](./2025-08-20%2014-10-25.gif)
+
 # Pet Project: Kafka + REST + 3 БД
 
 ## Что лежит в репе
